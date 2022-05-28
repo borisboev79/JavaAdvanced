@@ -49,7 +49,7 @@ public class ADV_LAB07_FindTheRealQueen {
                     }
                 }
                 if (realQueen) {
-                    for (int dia1Row = qRow + 1, dia1Col = qCol + 1; dia1Row < matrix.length - 1 && dia1Col < matrix.length - 1; dia1Row++, dia1Col++) {
+                    for (int dia1Row = qRow + 1, dia1Col = qCol + 1; dia1Row < matrix.length && dia1Col < matrix.length; dia1Row++, dia1Col++) {
                         if (matrix[dia1Row][dia1Col] == 'q') {
                             realQueen = false;
                             break;
@@ -69,7 +69,7 @@ public class ADV_LAB07_FindTheRealQueen {
                     }
                 }
                 if (realQueen) {
-                    for (int dia3Row = qRow - 1, dia3Col = qCol + 1; dia3Row >= 0 && dia3Col < matrix.length - 1; dia3Row--, dia3Col++) {
+                    for (int dia3Row = qRow - 1, dia3Col = qCol + 1; dia3Row >= 0 && dia3Col < matrix.length; dia3Row--, dia3Col++) {
                         if (matrix[dia3Row][dia3Col] == 'q') {
                             realQueen = false;
                             break;
@@ -80,7 +80,7 @@ public class ADV_LAB07_FindTheRealQueen {
                     }
                 }
                 if (realQueen) {
-                    for (int dia4Row = qRow + 1, dia4Col = qCol - 1; dia4Row < matrix.length - 1 && dia4Col >= 0; dia4Row++, dia4Col--) {
+                    for (int dia4Row = qRow + 1, dia4Col = qCol - 1; dia4Row < matrix.length && dia4Col >= 0; dia4Row++, dia4Col--) {
                         if (matrix[dia4Row][dia4Col] == 'q') {
                             realQueen = false;
                             break;
