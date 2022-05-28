@@ -1,4 +1,4 @@
-package Advanced_Lab4_StreamPsFilesAndDirectories;
+package Advanced_Lab4_StreamsFilesAndDirectories;
 
 import java.io.File;
 import java.io.IOException;
