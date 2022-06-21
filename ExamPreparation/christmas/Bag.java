@@ -3,6 +3,7 @@ package christmas;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Bag {
     private String color;
@@ -70,27 +71,29 @@ public class Bag {
     }
 
     public String report() {
-
+        //NO NEED TO CAPITALIZE FIRST LETTER
 //        StringBuilder sb = new StringBuilder();
 //        sb.append(getColor().substring(0, 1).toUpperCase()).append(getColor().substring(1).toLowerCase()).append(" bag contains: ")
 //                .append(System.lineSeparator());
 
-        StringBuilder sb = new StringBuilder();
-        sb.append(getColor()).append(" bag contains: ").append(System.lineSeparator());
-
-            // КРАДЕНО ОТ ЕСПИНОЗА
-
-//        public String report() {
-//            return this.color + "bag contains: " + System.lineSeparator() +
-//                    this.data.stream().map(Present::toString).collect(Collectors.joining(System.lineSeparator()));
+            //MY CODE
+      //  StringBuilder sb = new StringBuilder();
+      //  sb.append(getColor()).append(" bag contains: ").append(System.lineSeparator());
 
 
-        for (Present present : this.data) {
-            sb.append(present.toString());
-            sb.append(System.lineSeparator());
-        }
 
-        return sb.toString();
+//        for (Present present : this.data) {
+//            sb.append(present.toString());
+//            sb.append(System.lineSeparator());
+//        }
+//
+//        return sb.toString();
+
+           // КРАДЕНО ОТ ЕСПИНОЗА
+
+
+        return this.color + " bag contains: " + System.lineSeparator() +
+                this.data.stream().map(Present::toString).collect(Collectors.joining(System.lineSeparator()));
 
 
     }
