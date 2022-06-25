@@ -22,8 +22,7 @@ public class ItsChocolateTime {
         chocolateTypes.put("Milk Chocolate", 0.0);
         chocolateTypes.put("Dark Chocolate", 0.0);
         chocolateTypes.put("Baking Chocolate", 0.0);
-        chocolateTypes.put("Fruit Pie", 0.0);
-
+        
         while (!milkQueue.isEmpty() && !cacaoStack.isEmpty()) {
 
             double milk = milkQueue.poll();
